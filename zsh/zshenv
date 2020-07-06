@@ -162,3 +162,9 @@ export COPYFILE_DISABLE=true
 if [ -f "$HOME/.zshenv.local" ]; then
   source "$HOME/.zshenv.local"
 fi
+
+# Execute Tmux only on ssh default
+if [ -z "$TMUX" ] && [ -n "$SSH_TTY" ] && [[ $- =~ i ]]; then
+    tmux attach-session -t ssh || tmux new-session -s ssh
+    exit
+fi
