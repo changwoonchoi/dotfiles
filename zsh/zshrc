@@ -193,3 +193,6 @@ conda() {
   _conda_initialize
   conda "$@"
 }
+
+# alias
+[ -f ~/.aliases ] && source ~/.aliases
