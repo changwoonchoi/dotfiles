@@ -87,6 +87,9 @@ tasks = {
     '~/.condarc' : 'python/condarc',
     '~/.config/pycodestyle' : 'python/pycodestyle',
     '~/.ptpython/config.py' : 'python/ptpython.config.py',
+
+    # aliases
+    '~/.aliases': 'aliases',
 }
 
 

@@ -1,0 +1,12 @@
+alias ssh-fermat='ssh ccw@fermat.3dv.kr -p 7910'
+alias ssh-euclid='ssh ccw@euclid.3dv.kr -p 7910'
+alias ssh-gauss='ssh ccw@147.46.125.131 -p 7910'
+alias ssh-euclid-admin='ssh admin@euclid.3dv.kr -p 7910'
+alias ssh-fermat-admin='ssh admin@fermat.3dv.kr -p 7910'
+alias ssh-gauss-admin='ssh admin@147.46.125.131 -p 7910'
+alias ssh-ccw='ssh ccw@147.46.115.65 -p 7910'
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias .d="cd ~/.dotfiles"
+alias e='vi'
