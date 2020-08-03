@@ -93,6 +93,12 @@ if [ -d $HOME/anaconda3/bin/ ]; then
   fi
 fi
 
+# CUDA
+if [ -d /usr/local/cuda-10.2 ]; then
+   export PATH=/usr/local/cuda-10.2/bin:$PATH
+   export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH
+fi
+
 # rust (cargo)
 if [ -d $HOME/.cargo/bin/ ]; then
   path=( $path $HOME/.cargo/bin )
