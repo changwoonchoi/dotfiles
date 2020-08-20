@@ -196,3 +196,4 @@ conda() {
 
 # alias
 [ -f ~/.aliases ] && source ~/.aliases
+
