@@ -20,3 +20,4 @@ alias ...="cd ../.."
 alias .d="cd ~/.dotfiles"
 alias e='vi'
 alias ssh-start='sudo service ssh restart'
+alias file_num='ls | wc -l'
