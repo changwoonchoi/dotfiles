@@ -11,8 +11,8 @@ alias ssh-hilbert-admin='ssh admin@hilbert.3dv.kr -p 7910'
 alias ssh-iu-admin='ssh admin@iu.3dv.kr -p 7910'
 alias ssh-jarvis-admin='ssh admin@jarvis.3dv.kr -p 7910'
 alias ssh-nuc='ssh webadmin@nuc.3dv.kr -p 7910'
-alias ssh-ccw='ssh ccw@147.46.115.65 -p 7910'
-
+alias ssh-ccw='ssh ccw@ccw-lab.3dv.kr -p 7910'
+alias ssh-vision01='ssh ccw@147.46.115.179 -p 50123'
 
 
 alias ..="cd .."
@@ -21,3 +21,4 @@ alias .d="cd ~/.dotfiles"
 alias e='vi'
 alias ssh-start='sudo service ssh restart'
 alias file_num='ls | wc -l'
+alias file_num_all='find . -type f | wc -l'
