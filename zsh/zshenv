@@ -62,6 +62,7 @@ if ! (( ${path[(I)$HOME/.local/bin]} )); then
 fi
 
 # Additional $PATH configuration:
+# path=($path:~/Downloads/clion-2020.3.2/bin)
 
 # dotfiles-populated bin.
 if [ -d $HOME/.dotfiles/bin/ ]; then
@@ -98,6 +99,9 @@ if [ -d /usr/local/cuda-10.2 ]; then
    export PATH=/usr/local/cuda-10.2/bin:$PATH
    export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH
 fi
+
+# MATLAB
+path=($path "/usr/local/MATLAB/R2020b/bin/")
 
 # rust (cargo)
 if [ -d $HOME/.cargo/bin/ ]; then
@@ -174,3 +178,6 @@ if [ -z "$TMUX" ] && [ -n "$SSH_TTY" ] && [[ $- =~ i ]]; then
     tmux attach-session -t ssh || tmux new-session -s ssh
     exit
 fi
+
+export CC=gcc-7
+export CXX=g++-7
