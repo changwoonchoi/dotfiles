@@ -190,10 +190,16 @@
 
   # [@] RYG prompt symbol (>>>) if the last command succeeded,
   # or RYR if the last command failed.
-  local    PROMPT_NORMAL_OK='%B%F{red}❯%F{yellow}❯%F{green}❯%f%b'
-  local PROMPT_NORMAL_ERROR='%B%F{red}❯%F{yellow}❯%F{red}❯%f%b'
-  local    PROMPT_VIMODE_OK='%B%F{green}❮%F{yellow}❮%F{red}❮%f%b'
-  local PROMPT_VIMODE_ERROR='%B%F{red}❮%F{yellow}❮%F{red}❮%f%b'
+  # local    PROMPT_NORMAL_OK='%B%F{red}❯%F{yellow}❯%F{green}❯%f%b'
+  # local PROMPT_NORMAL_ERROR='%B%F{red}❯%F{yellow}❯%F{red}❯%f%b'
+  # local    PROMPT_VIMODE_OK='%B%F{green}❮%F{yellow}❮%F{red}❮%f%b'
+  # local PROMPT_VIMODE_ERROR='%B%F{red}❮%F{yellow}❮%F{red}❮%f%b'
+
+  local    PROMPT_NORMAL_OK='%B%F{green} $%f%b'
+  local PROMPT_NORMAL_ERROR='%B%F{red} $%f%b'
+  local    PROMPT_VIMODE_OK='%B%F{green}❯%f%b'
+  local PROMPT_VIMODE_ERROR='%B%F{red}❮%f%b'
+
 
   # [@] Default prompt symbol.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_VIINS_CONTENT_EXPANSION=$PROMPT_NORMAL_OK
@@ -866,14 +872,15 @@
 
   #####################[ anaconda: conda environment (https://conda.io/) ]######################
   # [@] Anaconda environment color. (cyan-like)
-  typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND=45
+  # typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND=45
+  typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND=157
   # Don't show Python version next to the anaconda environment name.
   typeset -g POWERLEVEL9K_ANACONDA_SHOW_PYTHON_VERSION=false
   # [@] Separate environment name from Python version only with a space.
   typeset -g POWERLEVEL9K_ANACONDA_LEFT_DELIMITER=''
   typeset -g POWERLEVEL9K_ANACONDA_RIGHT_DELIMITER=''
   # Custom icon.
-  # typeset -g POWERLEVEL9K_ANACONDA_VISUAL_IDENTIFIER_EXPANSION='⭐'
+  typeset -g POWERLEVEL9K_ANACONDA_VISUAL_IDENTIFIER_EXPANSION='🐍'
 
   ################[ pyenv: python environment (https://github.com/pyenv/pyenv) ]################
   # Pyenv color.
