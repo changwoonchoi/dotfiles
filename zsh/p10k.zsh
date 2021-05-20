@@ -843,7 +843,9 @@
   # Default context color (no privileges, no SSH).
   typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=180
 
-  local CONTEXT_TEMPLATE="%B%F{yellow}%n%f%b%F{242}@%B%F{${PROMPT_HOST_COLOR:-cyan}}%m%f%b"
+  # local CONTEXT_TEMPLATE="%B%F{yellow}%n%f%b%F{242}@%B%F{${PROMPT_HOST_COLOR:-cyan}}%m%f%b"
+  local CONTEXT_TEMPLATE="%B%F{darkslategray1}%n%f%b%F{242}@%B%F{${PROMPT_HOST_COLOR:-darkseagreen1}}%m%f%b"
+
   # Context format when running with privileges: bold user@hostname.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE='%B%n@%m'
   # [@] Context format when in SSH without privileges: user@hostname.
