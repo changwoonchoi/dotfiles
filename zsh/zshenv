@@ -101,7 +101,11 @@ if [ -d /usr/local/cuda-10.2 ]; then
 fi
 
 # MATLAB
-path=($path "/usr/local/MATLAB/R2020b/bin/")
+path=($path "/usr/local/MATLAB/R2021a/bin/")
+
+# BLENDER
+path=($path "/home/ccw/Downloads/blender-2.79b-linux-glibc219-x86_64/")
+# path=($path "/home/ccw/Downloads/blender-2.80-linux-glibc217-x86_64/")
 
 # rust (cargo)
 if [ -d $HOME/.cargo/bin/ ]; then
