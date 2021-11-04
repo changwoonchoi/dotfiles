@@ -1,9 +1,11 @@
 alias ssh-fermat='ssh ccw@fermat.3dv.kr -p 7910'
+alias ssh-dirac='ssh ccw@dirac.3dv.kr -p 7910'
 alias ssh-euclid='ssh ccw@euclid.3dv.kr -p 7910'
 alias ssh-gauss='ssh ccw@gauss.3dv.kr -p 7910'
 alias ssh-hilbert='ssh ccw@hilbert.3dv.kr -p 7910'
 alias ssh-iu='ssh ccw@iu.3dv.kr -p 7910'
 alias ssh-jarvis='ssh ccw@jarvis.3dv.kr -p 7910'
+alias ssh-dirac-admin='ssh admin@dirac.3dv.kr -p 7910'
 alias ssh-euclid-admin='ssh admin@euclid.3dv.kr -p 7910'
 alias ssh-fermat-admin='ssh admin@fermat.3dv.kr -p 7910'
 alias ssh-gauss-admin='ssh admin@gauss.3dv.kr -p 7910'
@@ -18,6 +20,7 @@ alias ssh-eecomp='ssh ccw@147.46.121.38'
 
 alias ..="cd .."
 alias ...="cd ../.."
+alias ....="cd ../../.."
 alias .d="cd ~/.dotfiles"
 alias e='vi'
 alias ssh-start='sudo service ssh restart'
