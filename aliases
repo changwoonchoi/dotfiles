@@ -25,6 +25,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .d="cd ~/.dotfiles"
 alias e='vi'
+alias p="cd /home/ccw/project/"
 alias ssh-start='sudo service ssh restart'
 alias file_num='ls | wc -l'
 alias file_num_all='find . -type f | wc -l'
