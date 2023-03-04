@@ -15,7 +15,7 @@ alias ssh-jarvis-admin='ssh admin@jarvis.3dv.kr -p 7910'
 alias ssh-nuc='ssh webadmin@nuc.3dv.kr -p 7910'
 alias ssh-ccw='ssh ccw@ccw-lab.3dv.kr -p 7910'
 alias ssh-vision01='ssh ccw@147.46.115.179 -p 50123'
-alias ssh-eecomp='ssh ccw@147.46.121.38'
+alias ssh-eecomp='ssh ccw@147.46.121.39'
 alias ssh-cauchy='ssh ccw@147.46.91.19 -p 7910'
 alias ssh-cauchy-admin='ssh admin@147.46.91.19 -p 7910'
 
