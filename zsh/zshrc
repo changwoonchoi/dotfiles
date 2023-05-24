@@ -177,14 +177,18 @@ fi
 # see ~/.zshenv for $CONDA_EXE detection
 function _conda_initialize() {
 # >>> conda initialize >>>
-if [ -n "${CONDA_EXE}" ]; then
-  ${CONDA_EXE} config --set auto_activate_base false
-  __conda_setup="$(${CONDA_EXE} 'shell.zsh' 'hook' 2> /dev/null)"
-  if [ $? -eq 0 ]; then
-      eval "$__conda_setup"
-  fi
-  unset __conda_setup
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/ccw/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/ccw/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/ccw/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/ccw/anaconda3/bin:$PATH"
+    fi
 fi
+unset __conda_setup
 # <<< conda initialize <<<
 }
 # Note: conda initialize is slow (0.3 sec), so execute lazily
@@ -202,3 +206,10 @@ export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
 
 export PATH="$HOME/.poetry/bin:$PATH"
+# 
+# # Source nerfstudio autocompletions.
+# if ! command -v compdef &> /dev/null; then
+#     autoload -Uz compinit
+#     compinit
+# fi
+# source /home/ccw/project/nerfstudio/scripts/completions/setup.zsh

@@ -128,3 +128,11 @@
 	# Enable HTTP(S) auth credential caching
 	# for 60 seconds (requires git 1.7.9+)
 	helper = cache --timeout 60
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Changwoon Choi
+	email = changwoon.choi00@gmail.com
