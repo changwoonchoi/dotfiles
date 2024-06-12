@@ -22,11 +22,13 @@ alias ssh-eecomp='ssh ccw@147.46.121.39'
 alias ssh-cauchy='ssh ccw@cauchy.3dv.kr -p 7910'
 alias ssh-cauchy-admin='ssh admin@cauchy.3dv.kr -p 7910'
 alias ssh-bayes-admin='ssh admin@bayes.3dv.kr -p 7910'
+alias ssh-knuth-admin='ssh admin@knuth.3dv.kr -p 7910'
 
 
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+alias .....="cd ../../../.."
 alias .d="cd ~/.dotfiles"
 alias e='vi'
 alias p="cd /home/ccw/project/"
