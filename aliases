@@ -7,6 +7,7 @@ alias ssh-hilbert='ssh ccw@hilbert.3dv.kr -p 7910'
 alias ssh-iu='ssh ccw@iu.3dv.kr -p 7910'
 alias ssh-jarvis='ssh ccw@jarvis.3dv.kr -p 7910'
 alias ssh-knuth='ssh ccw@knuth.3dv.kr -p 7910'
+alias ssh-laplace='ssh ccw@laplace.3dv.kr -p 7910'
 alias ssh-dirac-admin='ssh admin@dirac.3dv.kr -p 7910'
 alias ssh-euclid-admin='ssh admin@euclid.3dv.kr -p 7910'
 alias ssh-fermat-admin='ssh admin@fermat.3dv.kr -p 7910'
@@ -23,6 +24,7 @@ alias ssh-cauchy='ssh ccw@cauchy.3dv.kr -p 7910'
 alias ssh-cauchy-admin='ssh admin@cauchy.3dv.kr -p 7910'
 alias ssh-bayes-admin='ssh admin@bayes.3dv.kr -p 7910'
 alias ssh-knuth-admin='ssh admin@knuth.3dv.kr -p 7910'
+alias ssh-laplace-admin='ssh admin@laplace.3dv.kr -p 7910'
 
 
 alias ..="cd .."
